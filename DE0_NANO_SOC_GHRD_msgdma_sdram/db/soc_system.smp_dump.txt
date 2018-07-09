@@ -1,0 +1,407 @@
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:timer_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:mipi_pwdn_n_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:mipi_reset_n_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:i2c_opencores_camera_avalon_slave_0_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:i2c_opencores_mipi_avalon_slave_0_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:sysid_qsys_control_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_fpga_only_master:fpga_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:onchip_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:hps_0_f2h_axi_slave_rd_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:hps_0_f2h_axi_slave_wr_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|i2c_opencores:i2c_opencores_camera|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |ghrd|soc_system:u0|TERASIC_AUTO_FOCUS:terasic_auto_focus_0|I2C_VCM_Config:vcm_i2c|mSetup_ST
+Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0001 1 0 1 
+mSetup_ST.0010 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|i2c_opencores:i2c_opencores_mipi|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_wr|alt_vip_packet_transfer_write_proc:WRITE_BLOCK.write_proc_instance|unload_state
+Name unload_state.STOUT_SEND 
+unload_state.STOUT_CHECK 0 
+unload_state.STOUT_SEND 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_wr|alt_vip_packet_transfer_write_proc:WRITE_BLOCK.write_proc_instance|mem_state
+Name mem_state.STMEM_IDLE mem_state.STMEM_LAST_WORD mem_state.STMEM_OUTPUT 
+mem_state.STMEM_IDLE 0 0 0 
+mem_state.STMEM_OUTPUT 1 0 1 
+mem_state.STMEM_LAST_WORD 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_rd_ctrl:rd_ctrl|state
+Name state.STATE_VID_END_WAIT state.STATE_VOB_SEND_PACKET state.STATE_PT_SEND_PACKET state.STATE_PRE_PKT_WAIT state.STATE_VOB_SEND_CTRL state.STATE_IDLE state.STATE_SEND_RD_IDLE 
+state.STATE_SEND_RD_IDLE 0 0 0 0 0 0 0 
+state.STATE_IDLE 0 0 0 0 0 1 1 
+state.STATE_VOB_SEND_CTRL 0 0 0 0 1 0 1 
+state.STATE_PRE_PKT_WAIT 0 0 0 1 0 0 1 
+state.STATE_PT_SEND_PACKET 0 0 1 0 0 0 1 
+state.STATE_VOB_SEND_PACKET 0 1 0 0 0 0 1 
+state.STATE_VID_END_WAIT 1 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_sync_ctrl:sync_ctrl|last_wr_state
+Name last_wr_state.STATE_WR_NEW_PKT last_wr_state.STATE_WR_END_FRAME last_wr_state.STATE_WR_NEW_FRAME last_wr_state.STATE_WR_IDLE last_wr_state.STATE_WR_END_PKT 
+last_wr_state.STATE_WR_IDLE 0 0 0 0 0 
+last_wr_state.STATE_WR_NEW_FRAME 0 0 1 1 0 
+last_wr_state.STATE_WR_END_FRAME 0 1 0 1 0 
+last_wr_state.STATE_WR_NEW_PKT 1 0 0 1 0 
+last_wr_state.STATE_WR_END_PKT 0 0 0 1 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_sync_ctrl:sync_ctrl|wr_state
+Name wr_state.STATE_WR_NEW_PKT wr_state.STATE_WR_END_FRAME wr_state.STATE_WR_NEW_FRAME wr_state.STATE_WR_IDLE wr_state.STATE_WR_END_PKT 
+wr_state.STATE_WR_IDLE 0 0 0 0 0 
+wr_state.STATE_WR_NEW_FRAME 0 0 1 1 0 
+wr_state.STATE_WR_END_FRAME 0 1 0 1 0 
+wr_state.STATE_WR_NEW_PKT 1 0 0 1 0 
+wr_state.STATE_WR_END_PKT 0 0 0 1 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_sync_ctrl:sync_ctrl|rd_state
+Name rd_state.STATE_RD_END rd_state.STATE_RD_VIDEO rd_state.STATE_RD_ANC rd_state.STATE_RD_START rd_state.STATE_RD_READY rd_state.STATE_RD_IDLE_WAIT rd_state.STATE_RD_IDLE 
+rd_state.STATE_RD_IDLE 0 0 0 0 0 0 0 
+rd_state.STATE_RD_IDLE_WAIT 0 0 0 0 0 1 1 
+rd_state.STATE_RD_READY 0 0 0 0 1 0 1 
+rd_state.STATE_RD_START 0 0 0 1 0 0 1 
+rd_state.STATE_RD_ANC 0 0 1 0 0 0 1 
+rd_state.STATE_RD_VIDEO 0 1 0 0 0 0 1 
+rd_state.STATE_RD_END 1 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:button_pio_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_video_output_bridge:video_out|state
+Name state.TERMINATE state.CONCATENATE state.WAIT_FOR_COMMAND state.SEND_EMPTY_PACKET state.SEND_PACKET state.SEND_PACKET_SOP state.SEND_CONTROL_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.SEND_CONTROL_PACKET 0 0 0 0 0 0 1 1 
+state.SEND_PACKET_SOP 0 0 0 0 0 1 0 1 
+state.SEND_PACKET 0 0 0 0 1 0 0 1 
+state.SEND_EMPTY_PACKET 0 0 0 1 0 0 0 1 
+state.WAIT_FOR_COMMAND 0 0 1 0 0 0 0 1 
+state.CONCATENATE 0 1 0 0 0 0 0 1 
+state.TERMINATE 1 0 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_video_output_bridge:video_out|alt_vip_common_video_packet_encode:video_output|state
+Name state.SEND_PACKET state.SEND_EMPTY_PACKET state.TYPE_11_PACKET state.CONTROL_FINAL state.CONTROL_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.CONTROL_PACKET 0 0 0 0 1 1 
+state.CONTROL_FINAL 0 0 0 1 0 1 
+state.TYPE_11_PACKET 0 0 1 0 0 1 
+state.SEND_EMPTY_PACKET 0 1 0 0 0 1 
+state.SEND_PACKET 1 0 0 0 0 1 
+
+State Machine - |ghrd|altera_edge_detector:pulse_debug_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |ghrd|altera_edge_detector:pulse_warm_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |ghrd|altera_edge_detector:pulse_cold_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:jtag_uart_avalon_jtag_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:msgdma_0_descriptor_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|soc_system_alt_vip_cl_vfb_0_video_in:video_in|alt_vip_video_input_bridge_cmd:vid_back|state
+Name state.IDLE state.DISCARD state.SEND_PACKET 
+state.IDLE 0 0 0 
+state.SEND_PACKET 1 0 1 
+state.DISCARD 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_wr_ctrl:wr_ctrl|state
+Name state.STATE_ISSUE_CMD_TO_WRITE_PKT_TO_MEMORY state.STATE_REQUEST_EITHER_FRAME_OR_USER_PKT_FROM_VIB state.STATE_SEND_PASSTHRU state.STATE_WAIT_FOR_SYNC_CONTROLLER_INSTRUCTION state.STATE_VIB_EOP_WAIT state.STATE_DISCARDING_DATA_FROM_VIB_WAIT5 state.STATE_DISCARDING_DATA_FROM_VIB_WAIT4 state.STATE_DISCARDING_DATA_FROM_VIB_WAIT3 state.STATE_DISCARDING_DATA_FROM_VIB_WAIT2 state.STATE_DISCARDING_DATA_FROM_VIB_WAIT1 state.STATE_REQUEST_DISCARD_FROM_VIB state.STATE_VIB_DECIDE_ON_CURRENT_VIB_RESPONSE state.STATE_SENDING_SYNC_RESP_FOR_PREVIOUS_PKT state.STATE_SEND_SYNC_RESP_FOR_PREVIOUS_PKT state.STATE_VIB_RESP_WAIT 
+state.STATE_VIB_RESP_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STATE_SEND_SYNC_RESP_FOR_PREVIOUS_PKT 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.STATE_SENDING_SYNC_RESP_FOR_PREVIOUS_PKT 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.STATE_VIB_DECIDE_ON_CURRENT_VIB_RESPONSE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.STATE_REQUEST_DISCARD_FROM_VIB 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.STATE_DISCARDING_DATA_FROM_VIB_WAIT1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.STATE_DISCARDING_DATA_FROM_VIB_WAIT2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.STATE_DISCARDING_DATA_FROM_VIB_WAIT3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.STATE_DISCARDING_DATA_FROM_VIB_WAIT4 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STATE_DISCARDING_DATA_FROM_VIB_WAIT5 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STATE_VIB_EOP_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STATE_WAIT_FOR_SYNC_CONTROLLER_INSTRUCTION 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STATE_SEND_PASSTHRU 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STATE_REQUEST_EITHER_FRAME_OR_USER_PKT_FROM_VIB 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STATE_ISSUE_CMD_TO_WRITE_PKT_TO_MEMORY 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_wr_ctrl:wr_ctrl|state_r
+Name state_r.STATE_ISSUE_CMD_TO_WRITE_PKT_TO_MEMORY state_r.STATE_REQUEST_EITHER_FRAME_OR_USER_PKT_FROM_VIB state_r.STATE_SEND_PASSTHRU state_r.STATE_WAIT_FOR_SYNC_CONTROLLER_INSTRUCTION state_r.STATE_VIB_EOP_WAIT state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT5 state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT4 state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT3 state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT2 state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT1 state_r.STATE_REQUEST_DISCARD_FROM_VIB state_r.STATE_VIB_DECIDE_ON_CURRENT_VIB_RESPONSE state_r.STATE_SENDING_SYNC_RESP_FOR_PREVIOUS_PKT state_r.STATE_SEND_SYNC_RESP_FOR_PREVIOUS_PKT state_r.STATE_VIB_RESP_WAIT 
+state_r.STATE_VIB_RESP_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_r.STATE_SEND_SYNC_RESP_FOR_PREVIOUS_PKT 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_r.STATE_SENDING_SYNC_RESP_FOR_PREVIOUS_PKT 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_r.STATE_VIB_DECIDE_ON_CURRENT_VIB_RESPONSE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_r.STATE_REQUEST_DISCARD_FROM_VIB 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT4 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_r.STATE_DISCARDING_DATA_FROM_VIB_WAIT5 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_r.STATE_VIB_EOP_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_r.STATE_WAIT_FOR_SYNC_CONTROLLER_INSTRUCTION 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_r.STATE_SEND_PASSTHRU 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.STATE_REQUEST_EITHER_FRAME_OR_USER_PKT_FROM_VIB 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.STATE_ISSUE_CMD_TO_WRITE_PKT_TO_MEMORY 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_vfb_wr_ctrl:wr_ctrl|sync_resp_select
+Name sync_resp_select.SYNC_RESP_SELECT_ORPHAN_VID sync_resp_select.SYNC_RESP_SELECT_FRM_COMPL sync_resp_select.SYNC_RESP_SELECT_PKT_COMPL sync_resp_select.SYNC_RESP_SELECT_PASSTHRU 
+sync_resp_select.SYNC_RESP_SELECT_PASSTHRU 0 0 0 0 
+sync_resp_select.SYNC_RESP_SELECT_PKT_COMPL 0 0 1 1 
+sync_resp_select.SYNC_RESP_SELECT_FRM_COMPL 0 1 0 1 
+sync_resp_select.SYNC_RESP_SELECT_ORPHAN_VID 1 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:onchip_memory2_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:terasic_auto_focus_0_mm_ctrl_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:dipsw_pio_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:msgdma_0_csr_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_fpga_only_master:hps_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_fpga_only_master:hps_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_fpga_only_master:fpga_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_fpga_only_master:fpga_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:dma_0_control_port_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:led_pio_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_fpga_only_master:hps_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_rd|alt_vip_packet_transfer_read_proc:READ_BLOCK.read_proc_instance|state
+Name state.ST_WAIT_FOR_RESPONSE state.ST_ISSUE_READ state.ST_DECODE_2 state.ST_DECODE_1 state.ST_DECODE_0 state.ST_PREFETCH state.ST_FLUSH state.ST_IDLE state.ST_CMANY_DECODE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 0 
+state.ST_FLUSH 0 0 0 0 0 0 1 1 0 
+state.ST_PREFETCH 0 0 0 0 0 1 0 1 0 
+state.ST_DECODE_0 0 0 0 0 1 0 0 1 0 
+state.ST_DECODE_1 0 0 0 1 0 0 0 1 0 
+state.ST_DECODE_2 0 0 1 0 0 0 0 1 0 
+state.ST_ISSUE_READ 0 1 0 0 0 0 0 1 0 
+state.ST_WAIT_FOR_RESPONSE 1 0 0 0 0 0 0 1 0 
+state.ST_CMANY_DECODE 0 0 0 0 0 0 0 1 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_rd|alt_vip_packet_transfer_read_proc:READ_BLOCK.read_proc_instance|state_vld
+Name state_vld.MSG_VLD_IDLE state_vld.MSG_VLD_UPDATE state_vld.MSG_VLD_PREFETCH 
+state_vld.MSG_VLD_IDLE 0 0 0 
+state_vld.MSG_VLD_PREFETCH 1 0 1 
+state_vld.MSG_VLD_UPDATE 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_rd|alt_vip_packet_transfer_read_proc:READ_BLOCK.read_proc_instance|state_out
+Name state_out.OUTPUT_SEND state_out.OUTPUT_PREFETCH state_out.OUTPUT_POP_MSG_QUEUE state_out.OUTPUT_IDLE 
+state_out.OUTPUT_IDLE 0 0 0 0 
+state_out.OUTPUT_POP_MSG_QUEUE 0 0 1 1 
+state_out.OUTPUT_PREFETCH 0 1 0 1 
+state_out.OUTPUT_SEND 1 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_rd|alt_vip_packet_transfer_read_proc:READ_BLOCK.read_proc_instance|state_mm
+Name state_mm.MM_IDLE state_mm.MM_WAIT state_mm.MM_ISSUE_READ 
+state_mm.MM_IDLE 0 0 0 
+state_mm.MM_ISSUE_READ 1 0 1 
+state_mm.MM_WAIT 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|alt_vip_packet_transfer:pkt_trans_rd|alt_vip_packet_transfer_read_proc:READ_BLOCK.read_proc_instance|state_load
+Name state_load.LOAD_IDLE state_load.LOAD_RECEIVE state_load.LOAD_PREFETCH 
+state_load.LOAD_IDLE 0 0 0 
+state_load.LOAD_PREFETCH 1 0 1 
+state_load.LOAD_RECEIVE 1 1 0 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|soc_system_alt_vip_cl_vfb_0_video_in:video_in|alt_vip_video_input_bridge_resp:vid_front|state
+Name state.SEND_PAD_LINE_PACKET state.SEND_EOP_RESPONSE state.SEND_FRAME_PACKET state.DISCARD state.SEND_LINE_PACKET state.NEW_LINE_PACKET state.SEND_USER_PACKET state.NEW_USER_PACKET state.NEW_CONTROL_CONTEXT_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 
+state.NEW_CONTROL_CONTEXT_PACKET 0 0 0 0 0 0 0 0 1 1 
+state.NEW_USER_PACKET 0 0 0 0 0 0 0 1 0 1 
+state.SEND_USER_PACKET 0 0 0 0 0 0 1 0 0 1 
+state.NEW_LINE_PACKET 0 0 0 0 0 1 0 0 0 1 
+state.SEND_LINE_PACKET 0 0 0 0 1 0 0 0 0 1 
+state.DISCARD 0 0 0 1 0 0 0 0 0 1 
+state.SEND_FRAME_PACKET 0 0 1 0 0 0 0 0 0 1 
+state.SEND_EOP_RESPONSE 0 1 0 0 0 0 0 0 0 1 
+state.SEND_PAD_LINE_PACKET 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd|soc_system:u0|soc_system_alt_vip_cl_vfb_0:alt_vip_cl_vfb_0|soc_system_alt_vip_cl_vfb_0_video_in:video_in|alt_vip_video_input_bridge_resp:vid_front|alt_vip_common_video_packet_decode:video_input|state
+Name state.SEND_PACKET state.SEND_PACKET_SOP state.CONTEXT_PACKET state.CONTROL_PACKET state.SINGLE_BEAT_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.SINGLE_BEAT_PACKET 0 0 0 0 1 1 
+state.CONTROL_PACKET 0 0 0 1 0 1 
+state.CONTEXT_PACKET 0 0 1 0 0 1 
+state.SEND_PACKET_SOP 0 1 0 0 0 1 
+state.SEND_PACKET 1 0 0 0 0 1 

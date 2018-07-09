@@ -1,0 +1,30 @@
+#arm-linux-gnueabihf-gcc I2C_core.c -static -g -Wall  -I ${SOCEDS_DEST_ROOT}/ip/altera/hps/altera_hps/hwlib/include -o I2C_core.o -c
+#arm-linux-gnueabihf-gcc main.o -g -Wall -o d8m
+
+CC = arm-linux-gnueabihf-gcc
+CFLAGS = -static -g  -I ${SOCEDS_DEST_ROOT}/ip/altera/hps/altera_hps/hwlib/include
+LDFLAGS =  -g
+
+d8m_old: io.o main.o I2C_core.o auto_focus.o mipi_camera_config.o mipi_bridge_config.o 
+	$(CC) $(LDFLAGS) io.o main.o I2C_core.o auto_focus.o mipi_camera_config.o mipi_bridge_config.o -o d8m_old
+
+main.o: io.o I2C_core.o auto_focus.o mipi_camera_config.o mipi_bridge_config.o main.c
+	$(CC) io.o I2C_core.o auto_focus.o mipi_camera_config.o mipi_bridge_config.o main.c  $(CFLAGS) -o main.o -c
+
+mipi_camera_config.o: io.o I2C_core.o auto_focus.o mipi_camera_config.c 
+	$(CC) io.o I2C_core.o auto_focus.o mipi_camera_config.c $(CFLAGS) -o mipi_camera_config.o -c
+
+mipi_bridge_config.o: io.o I2C_core.o mipi_bridge_config.c 
+	$(CC) io.o I2C_core.o mipi_bridge_config.c $(CFLAGS) -o mipi_bridge_config.o -c
+
+auto_focus.o: io.o I2C_core.o auto_focus.c
+	$(CC) io.o I2C_core.o auto_focus.c $(CFLAGS) -o auto_focus.o -c
+
+I2C_core.o: io.o I2C_core.c 
+	$(CC) io.o I2C_core.c $(CFLAGS) -o I2C_core.o -c
+io.o: io.c
+	$(CC) io.c $(CFLAGS) -o io.o -c
+.PHONY: clean
+clean:
+	rm -f d8m_old *.a *.o
+
