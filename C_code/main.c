@@ -328,7 +328,7 @@ int main()
 	printf("wa: %x\n",(alt_u32)STDATA_MSGDMA_DESC.read_address);
 	printf("wa: %x\n",(alt_u32)STDATA_MSGDMA_DESC.control);
 	printf("wa: %x\n",(alt_u32)STDATA_MSGDMA_DESC.transfer_length);
-	/*int a = 0;
+	int a = 0;
   //for(int i=0; i<3; i++){
 	  //
 		printf("%x\n", (alt_u8 *)onchip_addr+21000);
@@ -347,7 +347,7 @@ int main()
   	1,
   	ALTERA_MSGDMA_DESCRIPTOR_CONTROL_PARK_WRITES_MASK);
 
-    alt_msgdma_standard_descriptor_async_transfer(STDATA_MSGDMA, &STDATA_MSGDMA_DESC);*/
+    alt_msgdma_standard_descriptor_async_transfer(STDATA_MSGDMA, &STDATA_MSGDMA_DESC);
 	//////////////////////////////////////////////////////////
 		alt_u16 bin_level = DEFAULT_LEVEL;
 		alt_u8  manual_focus_step = 10;

@@ -1,0 +1,8 @@
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (7580 megabytes used)</error>
+	<date>Mon Jul 09 17:24:41 2018</date>
+	<version>Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition</version>
+</internal_error>
+
