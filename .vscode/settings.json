@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "terasic_includes.h": "c",
+        "io.h": "c",
+        "alt_flash.h": "c"
+    }
+}
